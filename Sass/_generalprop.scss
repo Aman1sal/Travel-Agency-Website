@@ -1,0 +1,18 @@
+@import "colors";
+
+@mixin flexproperty{
+    display: flex;
+    justify-content: center;
+    margin: 0px 24px;
+    align-items: flex-end;
+    max-width: 1200px;
+    gap: 40px;
+}
+
+@mixin sectionproperty{
+    background-color: $bgColor;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+}

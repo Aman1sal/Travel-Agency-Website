@@ -1,0 +1,189 @@
+@import "environment";
+@import "colors";
+@import "typography";
+@import "generalprop";
+
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+// hero Section
+
+.hero-section {
+    background-image: url(../Images/Herobg.png);
+    width: 100%;
+    background-size: cover;
+    padding: 24px 0px;
+
+    .navbar {
+        width: 1280px;
+        display: flex;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: auto;
+
+        ul {
+            display: flex;
+            gap: 48px;
+
+            li {
+                list-style: none;
+
+                a {
+                    text-decoration: none;
+                    color: $headingColor;
+
+                    &:hover {
+                        color: $primaryColor;
+                    }
+                }
+            }
+        }
+    }
+
+    .hero {
+        display: flex;
+        max-width: 1280px;
+        flex-direction: column;
+        margin: 160px auto;
+        gap: 52px;
+
+        .hero-content {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            width: 50%;
+
+            p {
+                color: $headingColor;
+                font-size: 28px;
+            }
+
+            .btn {
+                margin-top: 24px;
+                width: fit-content;
+                padding: 12px 32px;
+                border-radius: 4px;
+                background: #16A0CC;
+                color: #FCFCFC;
+                text-align: center;
+                font-family: 'Gilroy';
+                font-size: 24px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 100%;
+                text-decoration: none;
+            }
+        }
+
+        .hero-bottom {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            a {
+                text-decoration: none;
+                color: #16A0CC;
+                font-family: 'Product Sans';
+                font-size: 24px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+                display: flex;
+                align-items: center;
+                gap: 24px;
+
+                img {
+                    max-width: 40px;
+                }
+            }
+
+            .hero-bottom-box {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 48px;
+
+                .hero-bottom-images {
+                    display: flex;
+                    gap: 48px;
+
+                    .city {
+                        background-image: url(../Images/City03.png);
+                        width: 200px;
+                        height: 225px;
+                        display: flex;
+                        position: relative;
+                        justify-content: center;
+
+                        h3 {
+                            margin-top: 20px;
+                        }
+
+                        img {
+                            width: 40px;
+                            height: 40px;
+                            position: absolute;
+                            bottom: 16px;
+                            right: 16px;
+                        }
+                    }
+
+                    .amritsar {
+                        background-image: url(../Images/City02.png);
+                    }
+
+                    .NewD {
+                        background-image: url(../Images/City01.png);
+                    }
+                }
+
+                .hero-slider {
+                    display: flex;
+                    gap: 24px;
+
+                    .slider {
+                        width: 12px;
+                        height: 12px;
+                        border-radius: 24px;
+                        background: rgba(255, 255, 255, 0.75);
+                    }
+                    .selected{
+                        background-color: #fff;
+                    }
+                }
+            }
+        }
+    }
+}
+.About-Section{
+    @include sectionproperty;
+    .about{
+        padding-top: 80px;
+        @include flexproperty;
+        &-content{
+            display: flex;
+            flex-direction: column;
+            gap: 48px;
+            position: relative;
+            .large-heading{
+                position: absolute;
+                left: -68px;
+                top: -125px;
+            }
+            p{
+                max-width: 80%;
+            }
+        }
+        &-image{
+            display: flex;
+            img{
+                max-width: 500px;
+            }
+        }
+    }
+}

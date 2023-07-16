@@ -1,0 +1,39 @@
+@import "colors";
+@import "environment";
+
+.main-heading{
+    color: $headingColor;
+    font-family: 'Gilroy';
+    font-size: 72px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.general-text{
+color: $textColor;
+font-family: 'Product Sans';
+font-size: 32px;
+font-style: normal;
+font-weight: 400;
+line-height: 136.8%; /* 43.776px */
+letter-spacing: 0.96px;
+}
+
+.large-heading{
+color: rgba(252, 252, 252, 0.25);
+font-family: 'Gilroy';
+font-size: 200px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+}
+
+.general-text-2{
+    color: #FCFCFC;
+font-family: 'Gilroy';
+font-size: 20px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+}
