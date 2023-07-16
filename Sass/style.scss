@@ -4,7 +4,7 @@
 @import "generalprop";
 
 
-*{
+* {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
@@ -50,7 +50,7 @@
         max-width: 1280px;
         flex-direction: column;
         margin: 160px auto;
-        gap: 52px;
+        gap: 60px;
 
         .hero-content {
             display: flex;
@@ -152,7 +152,8 @@
                         border-radius: 24px;
                         background: rgba(255, 255, 255, 0.75);
                     }
-                    .selected{
+
+                    .selected {
                         background-color: #fff;
                     }
                 }
@@ -160,29 +161,307 @@
         }
     }
 }
-.About-Section{
+
+.About-Section {
     @include sectionproperty;
-    .about{
+
+    .about {
         padding-top: 80px;
         @include flexproperty;
-        &-content{
+
+        &-content {
             display: flex;
             flex-direction: column;
             gap: 48px;
             position: relative;
-            .large-heading{
+
+            .large-heading {
                 position: absolute;
                 left: -68px;
                 top: -125px;
             }
-            p{
+
+            p {
                 max-width: 80%;
+            }
+        }
+
+        &-image {
+            display: flex;
+
+            img {
+                max-width: 500px;
+            }
+        }
+    }
+}
+
+.destination-section {
+    @include sectionproperty;
+
+    .destination {
+        padding-top: 240px;
+        @include flexproperty;
+
+        &-main {
+            display: flex;
+
+            img {
+                max-width: 450px;
+            }
+        }
+
+        &-content {
+            display: flex;
+            flex-direction: column;
+            gap: 48px;
+            position: relative;
+            h1{
+                position: absolute;
+                top: -125px;
+                left: -90px;
+            }
+
+            .destination-places {
+                .upper-places {
+                    display: flex;
+                    align-items: flex-start;
+                    gap: 24px;
+
+                    .Jaipur {
+                        @include imageproperty(208px, 240px, url(../Images/Jaipur.png));
+                    }
+                    .Coimbatore {
+                        @include imageproperty(250px, 195px, url(../Images/Coimbatore.png));
+                    }
+
+                    .Varansi {
+                        @include imageproperty(154px, 195px, url(../Images/Varansi.png));
+                    }
+                }
+                .lower-places {
+                    margin-top: -24px;
+                    display: flex;
+                    align-items: flex-end;
+                    gap: 24px;
+                    .Mathura{
+                        @include imageproperty(250px, 159px, url(../Images/Mathura.png));
+                    }
+                    .Ladakh{
+                        @include imageproperty(183px, 211px, url(../Images/Ladakh.png));
+                    }
+                    .More{
+                        @include imageproperty(185px, 211px, url(../Images/More.png));
+                    }
+                }
+            }
+        }
+    }
+}
+.tours-section{
+    @include sectionproperty;
+    .tours{
+        padding-top: 240px;
+        @include flexproperty;
+        &-content{
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+            position: relative;
+            h1{
+                position: absolute;
+                top: -125px;
+                left: -88px;
+            }
+        }
+        .tour-boxes{
+            display: flex;
+            flex-wrap: wrap;
+            gap: 32px;
+            .tour-box{
+                display: flex;
+                text-align: center;
+                flex-direction: column;
+                padding: 20px;
+                align-items: center;
+                justify-content: space-between;
+                gap: 8px;
+                width: 224px;
+                height: 224px;
+                p{
+                    color: $headingColor;
+                }
+            }
+            .may{
+                background-image: url(../Images/May.png);
+                background-size: cover;
+            }
+            .rajasthan{
+                background-image: url(../Images/Rajasthan.png);
+                background-size: cover;
+            }
+            .indian{
+                background-image: url(../Images/Indian\ Monuments.png);
+                background-size: cover;
+            }
+            .check{
+                background-image: url(../Images/More.png);
+                background-size: cover;
+            }
+        }
+        .tour-image{
+            display: flex;
+            img{
+                max-width: 500px;
+            }
+        }
+    }
+}
+.review-section{
+    @include sectionproperty;
+    .review{
+        padding-top: 240px;
+        @include flexproperty;
+        &-image{
+            display: flex;
+            img{
+                max-width: 450px;
+            }
+        }
+        &-content{
+            display: flex;
+            flex-direction: column;
+            gap: 60px;
+            position: relative;
+            h1{
+                position: absolute;
+                top:-132px;
+                left: -60px;
+            }
+            .review-written{
+                display: flex;
+                align-items: flex-end;
+                flex-direction: column;
+                gap: 24px;
+                position: relative;
+                text-align: right;
+                .quote{
+                    position: absolute;
+                    left: -50px;
+                    top: -50px;
+
+                }
+                .blue-text{
+                    color: $primaryColor;
+                }
+                .post{
+                    display: flex;
+                    justify-content: space-between;
+                    width: 100%;
+                    p{
+                        color: $primaryColor;
+                    }
+                }
+            }
+        }
+    }
+}
+.contact-section{
+    @include sectionproperty;
+    .contact{
+        padding-top: 240px;
+        @include flexproperty;
+        &-content{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            gap: 100px;
+            &-upper{
+                display: flex;
+                flex-direction: column;
+                gap: 48px;
+                position: relative;
+                h1{
+                    position: absolute;
+                    top: -125px;
+                    left: -88px;
+                }
+                .enter-details{
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    width: 100%;
+                    .input-text{
+                        width: 75%;
+                        border-radius: 4px;
+                        color: $textColor;
+                        border: 2px solid rgba(252, 252, 252, 0.40);
+                        background-color: $bgColor;
+                        padding: 12px;
+                        text-align: center;
+                    }
+                    .submit-btn{
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        border-radius: 4px;
+                        background-color: $primaryColor;
+                        color: $headingColor;
+                        padding: 12px 24px;
+                    }
+                }
+            }
+            &-lower{
+                display: flex;
+                flex-direction: column;
+                gap: 24px;
+                .social-connect{
+                    display: flex;
+                    gap: 20px;
+                    align-items: center;
+                    img{
+                        max-width: 36px;
+                    }
+                    p{
+                        color: $textColor;
+                    }
+                }
             }
         }
         &-image{
             display: flex;
             img{
-                max-width: 500px;
+                max-width: 450px;
+            }
+        }
+    }
+}
+.footer-section{
+    @include sectionproperty;
+    .footer{
+        padding-top: 240px;
+        padding-bottom: 30px;
+        @include flexproperty;
+        align-items: center;
+        width: 90%;
+        &-left-part{
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            justify-content: center;
+            gap: 20px;
+        }
+        &-right-part{
+            display: flex;
+            justify-content: space-around;
+            gap: 140px;
+            ul{
+                display: flex;
+                flex-direction: column;
+                gap: 24px;
+                li{
+                    list-style: none;
+                }
             }
         }
     }

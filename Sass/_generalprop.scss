@@ -2,11 +2,11 @@
 
 @mixin flexproperty{
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     margin: 0px 24px;
     align-items: flex-end;
     max-width: 1200px;
-    gap: 40px;
+    gap: 120px;
 }
 
 @mixin sectionproperty{
@@ -14,5 +14,15 @@
     width: 100%;
     display: flex;
     justify-content: center;
+}
 
+@mixin imageproperty($imageWidth, $imageHeight, $bgImage){
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: $headingColor;
+    width: $imageWidth;
+    height: $imageHeight;
+    background-image: $bgImage;
 }

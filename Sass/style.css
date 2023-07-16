@@ -116,7 +116,7 @@
   max-width: 1280px;
   flex-direction: column;
   margin: 160px auto;
-  gap: 52px;
+  gap: 60px;
 }
 .hero-section .hero .hero-content {
   display: flex;
@@ -221,11 +221,11 @@
 .About-Section .about {
   padding-top: 80px;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   margin: 0px 24px;
   align-items: flex-end;
   max-width: 1200px;
-  gap: 40px;
+  gap: 120px;
 }
 .About-Section .about-content {
   display: flex;
@@ -246,4 +246,351 @@
 }
 .About-Section .about-image img {
   max-width: 500px;
+}
+
+.destination-section {
+  background-color: #111718;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.destination-section .destination {
+  padding-top: 240px;
+  display: flex;
+  justify-content: space-between;
+  margin: 0px 24px;
+  align-items: flex-end;
+  max-width: 1200px;
+  gap: 120px;
+}
+.destination-section .destination-main {
+  display: flex;
+}
+.destination-section .destination-main img {
+  max-width: 450px;
+}
+.destination-section .destination-content {
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+  position: relative;
+}
+.destination-section .destination-content h1 {
+  position: absolute;
+  top: -125px;
+  left: -90px;
+}
+.destination-section .destination-content .destination-places .upper-places {
+  display: flex;
+  align-items: flex-start;
+  gap: 24px;
+}
+.destination-section .destination-content .destination-places .upper-places .Jaipur {
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #FCFCFC;
+  width: 208px;
+  height: 240px;
+  background-image: url(../Images/Jaipur.png);
+}
+.destination-section .destination-content .destination-places .upper-places .Coimbatore {
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #FCFCFC;
+  width: 250px;
+  height: 195px;
+  background-image: url(../Images/Coimbatore.png);
+}
+.destination-section .destination-content .destination-places .upper-places .Varansi {
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #FCFCFC;
+  width: 154px;
+  height: 195px;
+  background-image: url(../Images/Varansi.png);
+}
+.destination-section .destination-content .destination-places .lower-places {
+  margin-top: -24px;
+  display: flex;
+  align-items: flex-end;
+  gap: 24px;
+}
+.destination-section .destination-content .destination-places .lower-places .Mathura {
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #FCFCFC;
+  width: 250px;
+  height: 159px;
+  background-image: url(../Images/Mathura.png);
+}
+.destination-section .destination-content .destination-places .lower-places .Ladakh {
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #FCFCFC;
+  width: 183px;
+  height: 211px;
+  background-image: url(../Images/Ladakh.png);
+}
+.destination-section .destination-content .destination-places .lower-places .More {
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #FCFCFC;
+  width: 185px;
+  height: 211px;
+  background-image: url(../Images/More.png);
+}
+
+.tours-section {
+  background-color: #111718;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.tours-section .tours {
+  padding-top: 240px;
+  display: flex;
+  justify-content: space-between;
+  margin: 0px 24px;
+  align-items: flex-end;
+  max-width: 1200px;
+  gap: 120px;
+}
+.tours-section .tours-content {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  position: relative;
+}
+.tours-section .tours-content h1 {
+  position: absolute;
+  top: -125px;
+  left: -88px;
+}
+.tours-section .tours .tour-boxes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
+}
+.tours-section .tours .tour-boxes .tour-box {
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  padding: 20px;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  width: 224px;
+  height: 224px;
+}
+.tours-section .tours .tour-boxes .tour-box p {
+  color: #FCFCFC;
+}
+.tours-section .tours .tour-boxes .may {
+  background-image: url(../Images/May.png);
+  background-size: cover;
+}
+.tours-section .tours .tour-boxes .rajasthan {
+  background-image: url(../Images/Rajasthan.png);
+  background-size: cover;
+}
+.tours-section .tours .tour-boxes .indian {
+  background-image: url(../Images/Indian\ Monuments.png);
+  background-size: cover;
+}
+.tours-section .tours .tour-boxes .check {
+  background-image: url(../Images/More.png);
+  background-size: cover;
+}
+.tours-section .tours .tour-image {
+  display: flex;
+}
+.tours-section .tours .tour-image img {
+  max-width: 500px;
+}
+
+.review-section {
+  background-color: #111718;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.review-section .review {
+  padding-top: 240px;
+  display: flex;
+  justify-content: space-between;
+  margin: 0px 24px;
+  align-items: flex-end;
+  max-width: 1200px;
+  gap: 120px;
+}
+.review-section .review-image {
+  display: flex;
+}
+.review-section .review-image img {
+  max-width: 450px;
+}
+.review-section .review-content {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+  position: relative;
+}
+.review-section .review-content h1 {
+  position: absolute;
+  top: -132px;
+  left: -60px;
+}
+.review-section .review-content .review-written {
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
+  gap: 24px;
+  position: relative;
+  text-align: right;
+}
+.review-section .review-content .review-written .quote {
+  position: absolute;
+  left: -50px;
+  top: -50px;
+}
+.review-section .review-content .review-written .blue-text {
+  color: #16A0CC;
+}
+.review-section .review-content .review-written .post {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.review-section .review-content .review-written .post p {
+  color: #16A0CC;
+}
+
+.contact-section {
+  background-color: #111718;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.contact-section .contact {
+  padding-top: 240px;
+  display: flex;
+  justify-content: space-between;
+  margin: 0px 24px;
+  align-items: flex-end;
+  max-width: 1200px;
+  gap: 120px;
+}
+.contact-section .contact-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 100px;
+}
+.contact-section .contact-content-upper {
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+  position: relative;
+}
+.contact-section .contact-content-upper h1 {
+  position: absolute;
+  top: -125px;
+  left: -88px;
+}
+.contact-section .contact-content-upper .enter-details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.contact-section .contact-content-upper .enter-details .input-text {
+  width: 75%;
+  border-radius: 4px;
+  color: #4C5051;
+  border: 2px solid rgba(252, 252, 252, 0.4);
+  background-color: #111718;
+  padding: 12px;
+  text-align: center;
+}
+.contact-section .contact-content-upper .enter-details .submit-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  background-color: #16A0CC;
+  color: #FCFCFC;
+  padding: 12px 24px;
+}
+.contact-section .contact-content-lower {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.contact-section .contact-content-lower .social-connect {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+.contact-section .contact-content-lower .social-connect img {
+  max-width: 36px;
+}
+.contact-section .contact-content-lower .social-connect p {
+  color: #4C5051;
+}
+.contact-section .contact-image {
+  display: flex;
+}
+.contact-section .contact-image img {
+  max-width: 450px;
+}
+
+.footer-section {
+  background-color: #111718;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.footer-section .footer {
+  padding-top: 240px;
+  padding-bottom: 30px;
+  display: flex;
+  justify-content: space-between;
+  margin: 0px 24px;
+  align-items: flex-end;
+  max-width: 1200px;
+  gap: 120px;
+  align-items: center;
+  width: 90%;
+}
+.footer-section .footer-left-part {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+}
+.footer-section .footer-right-part {
+  display: flex;
+  justify-content: space-around;
+  gap: 140px;
+}
+.footer-section .footer-right-part ul {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.footer-section .footer-right-part ul li {
+  list-style: none;
 }/*# sourceMappingURL=style.css.map */
