@@ -9,6 +9,10 @@
     padding: 0px;
     box-sizing: border-box;
 }
+.allcontent{
+    max-width: 100vw;
+    overflow-x: hidden;
+}
 
 // hero Section
 
@@ -19,12 +23,12 @@
     padding: 24px 0px;
 
     .navbar {
-        width: 1280px;
-        display: flex;
+        width: 90%;
         display: flex;
         align-items: center;
         justify-content: space-between;
         margin: auto;
+        padding: 0px 24px;
 
         ul {
             display: flex;
@@ -49,13 +53,14 @@
         display: flex;
         max-width: 1280px;
         flex-direction: column;
-        margin: 160px auto;
-        gap: 60px;
+        margin: 120px auto;
+        gap: 50px;
+        padding: 0px 24px;
 
         .hero-content {
             display: flex;
             flex-direction: column;
-            gap: 20px;
+            gap: 10px;
             width: 50%;
 
             p {
@@ -77,6 +82,11 @@
                 font-weight: 500;
                 line-height: 100%;
                 text-decoration: none;
+                cursor: pointer;
+
+                &:hover {
+                    box-shadow: 0px 7px 15px 0px rgba(17, 120, 153, 0.36);
+                }
             }
         }
 
@@ -167,13 +177,14 @@
 
     .about {
         padding-top: 80px;
-        @include flexproperty;
+        @include flexproperty2;
 
         &-content {
             display: flex;
             flex-direction: column;
             gap: 48px;
             position: relative;
+            width: 100%;
 
             .large-heading {
                 position: absolute;
@@ -190,7 +201,7 @@
             display: flex;
 
             img {
-                max-width: 500px;
+                max-width: 450px;
             }
         }
     }
@@ -216,7 +227,8 @@
             flex-direction: column;
             gap: 48px;
             position: relative;
-            h1{
+
+            h1 {
                 position: absolute;
                 top: -125px;
                 left: -90px;
@@ -224,61 +236,96 @@
 
             .destination-places {
                 .upper-places {
-                    display: flex;
-                    align-items: flex-start;
-                    gap: 24px;
+                    @include destinationimages;
 
                     .Jaipur {
                         @include imageproperty(208px, 240px, url(../Images/Jaipur.png));
+
+                        &:hover {
+                            scale: 1.12;
+                            background-image: url(../Images/Jaipur\ hover.png);
+                        }
                     }
+
                     .Coimbatore {
                         @include imageproperty(250px, 195px, url(../Images/Coimbatore.png));
+
+                        &:hover {
+                            scale: 1.12;
+                            background-image: url(../Images/Coimbatore\ hover.png);
+                        }
                     }
 
                     .Varansi {
                         @include imageproperty(154px, 195px, url(../Images/Varansi.png));
+
+                        &:hover {
+                            scale: 1.12;
+                            background-image: url(../Images/Varansi\ hover.png);
+                        }
                     }
                 }
+
                 .lower-places {
-                    margin-top: -24px;
-                    display: flex;
-                    align-items: flex-end;
-                    gap: 24px;
-                    .Mathura{
+                        @include destinationimages;
+                        .Mathura {
                         @include imageproperty(250px, 159px, url(../Images/Mathura.png));
+
+                        &:hover {
+                            scale: 1.12;
+                            background-image: url(../Images/Mathura\ hover.png);
+                        }
                     }
-                    .Ladakh{
+
+                    .Ladakh {
                         @include imageproperty(183px, 211px, url(../Images/Ladakh.png));
+
+                        &:hover {
+                            scale: 1.12;
+                            background-image: url(../Images/Ladakh\ hover.png);
+                        }
                     }
-                    .More{
+
+                    .More {
                         @include imageproperty(185px, 211px, url(../Images/More.png));
+
+                        &:hover {
+                            scale: 1.12;
+                            background-image: url(../Images/More\ hover.png);
+                        }
                     }
                 }
             }
         }
     }
 }
-.tours-section{
+
+.tours-section {
     @include sectionproperty;
-    .tours{
+
+    .tours {
         padding-top: 240px;
-        @include flexproperty;
-        &-content{
+        @include flexproperty2;
+
+        &-content {
             display: flex;
             flex-direction: column;
             gap: 40px;
             position: relative;
-            h1{
+
+            h1 {
                 position: absolute;
                 top: -125px;
                 left: -88px;
             }
         }
-        .tour-boxes{
+
+        .tour-boxes {
             display: flex;
             flex-wrap: wrap;
             gap: 32px;
-            .tour-box{
+
+            .tour-box {
                 display: flex;
                 text-align: center;
                 flex-direction: column;
@@ -288,77 +335,116 @@
                 gap: 8px;
                 width: 224px;
                 height: 224px;
-                p{
+
+                p {
                     color: $headingColor;
                 }
             }
-            .may{
+
+            .may {
                 background-image: url(../Images/May.png);
                 background-size: cover;
+                transition: 0.35s all;
+
+                &:hover {
+                    scale: 1.1;
+                }
             }
-            .rajasthan{
+
+            .rajasthan {
                 background-image: url(../Images/Rajasthan.png);
                 background-size: cover;
+                transition: 0.35s all;
+
+                &:hover {
+                    scale: 1.1;
+                }
             }
-            .indian{
+
+            .indian {
                 background-image: url(../Images/Indian\ Monuments.png);
                 background-size: cover;
+                transition: 0.35s all;
+
+                &:hover {
+                    scale: 1.1;
+                }
             }
-            .check{
+
+            .check {
                 background-image: url(../Images/More.png);
                 background-size: cover;
+                transition: 0.35s all;
+
+                &:hover {
+                    scale: 1.1;
+                    background-image: url(../Images/Check\ More\ Hover.png);
+                }
             }
         }
-        .tour-image{
+
+        .tour-image {
             display: flex;
-            img{
+
+            img {
                 max-width: 500px;
             }
         }
     }
 }
-.review-section{
+
+.review-section {
     @include sectionproperty;
-    .review{
+
+    .review {
         padding-top: 240px;
         @include flexproperty;
-        &-image{
+
+        &-image {
             display: flex;
-            img{
+
+            img {
                 max-width: 450px;
             }
         }
-        &-content{
+
+        &-content {
             display: flex;
             flex-direction: column;
             gap: 60px;
             position: relative;
-            h1{
+
+            h1 {
                 position: absolute;
-                top:-132px;
+                top: -132px;
                 left: -60px;
             }
-            .review-written{
+
+            .review-written {
                 display: flex;
                 align-items: flex-end;
                 flex-direction: column;
                 gap: 24px;
                 position: relative;
                 text-align: right;
-                .quote{
+
+                .quote {
                     position: absolute;
                     left: -50px;
                     top: -50px;
 
                 }
-                .blue-text{
+
+                .blue-text {
                     color: $primaryColor;
                 }
-                .post{
+
+                .post {
                     display: flex;
                     justify-content: space-between;
                     width: 100%;
-                    p{
+
+                    p {
                         color: $primaryColor;
                     }
                 }
@@ -366,32 +452,39 @@
         }
     }
 }
-.contact-section{
+
+.contact-section {
     @include sectionproperty;
-    .contact{
+
+    .contact {
         padding-top: 240px;
-        @include flexproperty;
-        &-content{
+        @include flexproperty2;
+
+        &-content {
             display: flex;
             flex-direction: column;
             justify-content: space-between;
             gap: 100px;
-            &-upper{
+
+            &-upper {
                 display: flex;
                 flex-direction: column;
                 gap: 48px;
                 position: relative;
-                h1{
+
+                h1 {
                     position: absolute;
                     top: -125px;
                     left: -88px;
                 }
-                .enter-details{
+
+                .enter-details {
                     display: flex;
                     justify-content: space-between;
                     align-items: center;
                     width: 100%;
-                    .input-text{
+
+                    .input-text {
                         width: 75%;
                         border-radius: 4px;
                         color: $textColor;
@@ -400,7 +493,8 @@
                         padding: 12px;
                         text-align: center;
                     }
-                    .submit-btn{
+
+                    .submit-btn {
                         display: flex;
                         align-items: center;
                         justify-content: center;
@@ -408,61 +502,162 @@
                         background-color: $primaryColor;
                         color: $headingColor;
                         padding: 12px 24px;
+                        cursor: pointer;
+
+                        &:hover {
+                            box-shadow: 0px 7px 15px 0px rgba(17, 120, 153, 0.36);
+                        }
                     }
                 }
             }
-            &-lower{
+
+            &-lower {
                 display: flex;
                 flex-direction: column;
                 gap: 24px;
-                .social-connect{
+
+                .social-connect {
                     display: flex;
                     gap: 20px;
                     align-items: center;
-                    img{
+
+                    img {
                         max-width: 36px;
                     }
-                    p{
+
+                    p {
                         color: $textColor;
                     }
                 }
             }
         }
-        &-image{
+
+        &-image {
             display: flex;
-            img{
+
+            img {
                 max-width: 450px;
             }
         }
     }
 }
-.footer-section{
+
+.footer-section {
     @include sectionproperty;
-    .footer{
+
+    .footer {
         padding-top: 240px;
-        padding-bottom: 30px;
+        padding-bottom: 40px;
         @include flexproperty;
         align-items: center;
         width: 90%;
-        &-left-part{
+
+        &-left-part {
             display: flex;
             align-items: center;
             flex-direction: column;
             justify-content: center;
             gap: 20px;
         }
-        &-right-part{
+
+        &-right-part {
             display: flex;
             justify-content: space-around;
             gap: 140px;
-            ul{
+
+            ul {
                 display: flex;
                 flex-direction: column;
                 gap: 24px;
-                li{
+
+                li {
                     list-style: none;
                 }
             }
         }
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .hero {
+        max-width: 900px;
+        margin: 80px auto;
+        gap: 20px;
+
+        .hero-content {
+            gap: 10px;
+            width: 100%;
+            align-self: center;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .hero-bottom {
+            flex-direction: column;
+
+            a {
+                visibility: hidden;
+            }
+
+            &-box {
+                align-items: center;
+
+                .hero-slider {
+                    align-self: center;
+                }
+            }
+        }
+    }
+
+    .tours-content {
+        max-width: 75%;
+    }
+
+    .tour-boxes {
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .review-content {
+        max-width: 75%;
+    }
+
+    .contact-content {
+        max-width: 80%;
+    }
+
+    .about-content {
+        max-width: 80%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .navbar{
+        flex-direction: column;
+        ul{
+            flex-direction: row;
+            justify-content: flex-start;
+            align-items: flex-start;
+            gap: 0px;
+            visibility: hidden;
+        }
+    }
+    .large-heading{
+        font-size: 160px;
+    }
+    .main-heading{
+        font-size: 68px;
+    }
+
+    .general-text {
+        font-size: 24px;
+    }
+
+    .city {
+        max-width: 120px;
+        max-height: 150px;
+        background-size: cover;
     }
 }
